@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz - Énergies Renouvelables</title>
+  <link rel="stylesheet" href="/css/styles.css">
+  <link rel="stylesheet" href="/css/styleQuiz.css">
+</head>
+<body>
+  <header>
+    <div class="header-container">
+      <img src="/img/Logo.png" alt="Logo site" class="logo">
+      <h1>Quiz sur les Énergies Renouvelables</h1>
+      <img src="/img/ODD7.png" alt="Logo ODD 7" class="odd7">
+    </div>
+    <nav>
+      <a href="accueil.html">Accueil</a>
+      <a href="type_energie.html">Types D'énergie</a>
+      <a href="Quiz.html">Quiz</a>
+    </nav>
+  </header>
+
+  <main>
+    <form id="quiz-form">
+
+      <section>
+        <p><strong>1. Quelle énergie est renouvelable ?</strong></p>
+        <label><input type="radio" name="q1" value="1"> Charbon</label><br>
+        <label><input type="radio" name="q1" value="2"> Solaire</label><br>
+        <label><input type="radio" name="q1" value="3"> Gaz naturel</label>
+      </section><br>
+
+      <section>
+        <p><strong>2. Quelle énergie dépend du vent ?</strong></p>
+        <label><input type="radio" name="q2" value="1"> Éolienne</label><br>
+        <label><input type="radio" name="q2" value="2"> Hydraulique</label><br>
+        <label><input type="radio" name="q2" value="3"> Nucléaire</label>
+      </section><br>
+
+      <section>
+        <p><strong>3. Quelle est la source principale de l’énergie solaire ?</strong></p>
+        <label><input type="radio" name="q3" value="1"> La Terre</label><br>
+        <label><input type="radio" name="q3" value="2"> La Lune</label><br>
+        <label><input type="radio" name="q3" value="3"> Le Soleil</label>
+      </section><br>
+
+      <section>
+        <p><strong>4. Quelles sont les énergies renouvelables ? (plusieurs réponses possibles)</strong></p>
+        <label><input type="checkbox" name="q4" value="solaire"> Solaire</label><br>
+        <label><input type="checkbox" name="q4" value="charbon"> Charbon</label><br>
+        <label><input type="checkbox" name="q4" value="eolienne"> Éolienne</label><br>
+        <label><input type="checkbox" name="q4" value="gaz"> Gaz naturel</label><br>
+        <label><input type="checkbox" name="q4" value="hydraulique"> Hydraulique</label>
+      </section><br>
+
+      <section>
+        <p><strong>5. Donnez un exemple d'avantage des énergies renouvelables :</strong></p>
+        <input type="text" name="q5" placeholder="Votre réponse..." style="width:100%; padding:8px;">
+      </section><br>
+
+      <button type="button" onclick="corrigerQuiz()">Soumettre</button>
+    </form>
+
+    <div id="resultat"></div>
+  </main>
+
+  <footer>
+    <nav>
+      <a href="apropos.html">À propos</a>
+    </nav>
+  </footer>
+
+  <script src="/javascript/script_quiz.js"></script>
+</body>
+</html>

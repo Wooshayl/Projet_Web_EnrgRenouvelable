@@ -1,0 +1,50 @@
+main {
+  padding: 20px;
+  max-width: 800px;
+  margin: auto;
+  background-color: #34495E;
+  border-radius: 12px;
+}
+
+form p {
+  font-size: 1.2em;
+  margin-bottom: 5px;
+}
+
+section {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin: 5px 0;
+  cursor: pointer;
+}
+
+input[type="text"] {
+  font-size: 1em;
+  border-radius: 8px;
+  border: none;
+}
+
+button {
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: #27AE60;
+  color: #fff;
+  font-size: 1em;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #1ABC9C;
+}
+
+#resultat {
+  margin-top: 20px;
+  font-size: 1.3em;
+  color: #F1C40F;
+  text-align: center;
+}
