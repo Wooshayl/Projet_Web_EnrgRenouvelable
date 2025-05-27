@@ -1,12 +1,6 @@
-body {
-  margin: 0;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #2C3E50;
-  color: #ECF0F1;
-}
 
 header {
-  background-color: #7cbdff;
+  background-color: #1a7431;
   padding: 15px;
 }
 header img {
@@ -32,7 +26,7 @@ header img {
   text-align: center;
   font-size: 2em;
   margin: 0;
-  color: #ECF0F1;
+  color: white;
 }
 
 nav {
@@ -40,13 +34,13 @@ nav {
   justify-content: center;
   gap: 15px;
   padding: 15px;
-  background-color: #7cbdff;
-  border-top: 2px solid #a1cfb4;
+
+  border-top: 2px solid #618c56;
 }
 
 nav a {
   text-decoration: none;
-  color: #ECF0F1;
+  color: white;
   background-color: transparent;
   border: 2px solid transparent;
   border-radius: 8px;
@@ -80,7 +74,9 @@ section a {
 }
 
 footer {
-  background-color: #7cbdff;
+  background-color: #1a7431;
   padding: 20px;
   text-align: center;
 }
+
+

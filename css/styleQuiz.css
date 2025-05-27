@@ -1,50 +1,139 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
 main {
-  padding: 20px;
+  padding: 2rem;
   max-width: 800px;
-  margin: auto;
-  background-color: #34495E;
-  border-radius: 12px;
+  margin: 2rem auto;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-form p {
-  font-size: 1.2em;
-  margin-bottom: 5px;
+/* Quiz title */
+main h2 {
+  color: #1a7431;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-size: 1.8rem;
 }
 
+/* Quiz sections */
 section {
-  margin-bottom: 20px;
+  margin-bottom: 1.5rem;
+  padding: 1.5rem;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  transition: transform 0.2s;
 }
 
+section:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Question styling */
+form p {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+form p strong {
+  color: #1a7431;
+}
+
+/* Radio and checkbox options */
 label {
   display: block;
-  margin: 5px 0;
+  margin: 0.7rem 0;
+  cursor: pointer;
+  padding: 0.5rem;
+  border-radius: 4px;
+  transition: background-color 0.2s;
+}
+
+label:hover {
+  background-color: rgba(26, 116, 49, 0.1);
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  margin-right: 10px;
   cursor: pointer;
 }
 
+/* Text input styling */
 input[type="text"] {
-  font-size: 1em;
+  width: 100%;
+  padding: 0.8rem;
+  font-size: 1rem;
   border-radius: 8px;
-  border: none;
+  border: 1px solid #ddd;
+  transition: border-color 0.3s;
 }
 
+input[type="text"]:focus {
+  outline: none;
+  border-color: #1a7431;
+  box-shadow: 0 0 0 2px rgba(26, 116, 49, 0.2);
+}
+
+/* Button styling to match the site's CTA buttons */
 button {
-  margin-top: 15px;
-  padding: 10px 20px;
-  background-color: #27AE60;
-  color: #fff;
-  font-size: 1em;
+  display: block;
+  margin: 2rem auto 1rem;
+  padding: 0.8rem 1.5rem;
+  background-color: #f9c74f;
+  color: #333;
+  font-size: 1rem;
+  font-weight: bold;
   border: none;
-  border-radius: 8px;
+  border-radius: 4px;
   cursor: pointer;
+  transition: background-color 0.3s;
 }
 
 button:hover {
-  background-color: #1ABC9C;
+  background-color: #f3b711;
 }
 
+/* Results section */
 #resultat {
-  margin-top: 20px;
-  font-size: 1.3em;
-  color: #F1C40F;
+  margin-top: 2rem;
+  padding: 1.5rem;
+  font-size: 1.3rem;
   text-align: center;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  transition: all 0.3s;
+}
+
+/* When results are shown, add a success style */
+#resultat.success {
+  background-color: rgba(26, 116, 49, 0.1);
+  color: #1a7431;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  main {
+    padding: 1.5rem;
+    margin: 1rem;
+  }
+
+  section {
+    padding: 1rem;
+  }
+
+  form p {
+    font-size: 1.1rem;
+  }
+
+  #resultat {
+    font-size: 1.1rem;
+  }
 }

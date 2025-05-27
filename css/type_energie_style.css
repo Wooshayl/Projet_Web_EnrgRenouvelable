@@ -2,10 +2,14 @@ body {
   margin: 0;
   padding: 0;
   font-family: Arial, sans-serif;
-  background: #f0f0f0;
+  background: #faf1e4;
   justify-content: center;
   align-items: center;
   height: 100vh;
+}
+
+h1 {
+  color: #3c403b;
 }
 
 .card-container {
