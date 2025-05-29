@@ -1,0 +1,118 @@
+.barrage-container {
+    position: relative;
+    width: 90%;
+    max-width: 500px;
+    margin: 30px auto;
+}
+
+.barrage-img {
+    width: 100%;
+    display: block;
+    z-index: 1;
+    position: relative;
+}
+
+/* 👇 Zone de masquage sur les ouvertures du barrage */
+.mask {
+    position: absolute;
+    top: 45%;
+    /* ajuste selon ta capture */
+    left: 0;
+    width: 100%;
+    height: 35%;
+    /* hauteur de la zone à remplir */
+    z-index: 2;
+    pointer-events: none;
+}
+
+/* Colonnes d’eau maintenant restreintes à la zone mask */
+.eau-colonne {
+    position: absolute;
+    bottom: 0;
+    width: 8%;
+    height: 0;
+    background-color: rgba(33, 150, 243, 0.6);
+    transition: height 0.5s ease-in-out;
+    border-radius: 2px;
+}
+
+/* Ajuster la position horizontale selon l’image */
+.colonne1 {
+    left: 33.6%;
+    width: 8.3%;
+    transform: skewX(-3deg);
+}
+
+.colonne2 {
+    left: 45.2%;
+    width: 9.2%;
+    transform: none;
+}
+
+.colonne3 {
+    left: 57.6%;
+    width: 8.9%;
+    transform: skewX(3deg);
+}
+
+.pompe-zone {
+    position: absolute;
+    right: -110px;
+    top: 20%;
+    width: 100px;
+    text-align: center;
+    padding: 10px;
+    background-color: #f1f8ff;
+    border: 2px solid #90caf9;
+    border-radius: 10px;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+}
+
+.pompe-zone:hover {
+    transform: scale(1.05);
+}
+
+.pompe {
+    width: 60px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.pompe:active {
+    transform: scale(1.1) rotate(-10deg);
+}
+
+.pompe-zone p {
+    margin: 8px 0 0;
+    font-weight: bold;
+    font-size: 0.95rem;
+    color: #1565c0;
+}
+
+
+#content {
+    display: none;
+    margin: 30px auto;
+    padding: 20px;
+    border-radius: 8px;
+    background: #e3f2fd;
+    text-align: center;
+    max-width: 700px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    border: 1px solid #ccc;
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #90caf9;
+}
