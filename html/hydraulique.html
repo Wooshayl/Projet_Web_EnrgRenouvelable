@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Énergie Hydraulique</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/styles.css">
+  <link rel="stylesheet" href="/css/hydraulique_style.css">
+</head>
+<body>
+
+  <header>
+    <div class="header-container">
+      <img src="../img/Logo.png" alt="Logo site" class="logo">
+      <h1>Énergie Hydraulique</h1>
+      <img src="../img/ODD7.png" alt="Logo ODD 7" class="odd7">
+    </div>
+    <nav>
+      <a href="accueil.html">Accueil</a>
+      <a href="type_energie.html">Types D'énergie</a>
+      <a href="quiz.html">Quiz</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2 style="text-align: center;">Clique sur la pompe pour remplir le barrage !</h2>
+
+    <div class="barrage-container">
+  <img src="/img/barrage.png" class="barrage-img" alt="Barrage">
+
+  <div class="mask">
+    <div class="eau-colonne colonne1"></div>
+    <div class="eau-colonne colonne2"></div>
+    <div class="eau-colonne colonne3"></div>
+  </div>
+
+  <div class="pompe-zone">
+    <img src="/img/pompe.png" class="pompe" alt="Pompe" onclick="ajouterEau()">
+    <p>Cliquez ici</p>
+  </div>
+</div>
+
+
+    <div id="content">
+      <h3>L’énergie hydraulique – Informations clés</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Aspect</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Définition</td>
+            <td>L’énergie hydraulique est produite par le mouvement de l’eau (cours d’eau, barrages, marées), transformé en électricité grâce à des turbines.</td>
+          </tr>
+          <tr>
+            <td>Types</td>
+            <td>
+              <strong>Hydroélectricité par barrage</strong> : stockage de l’eau dans un réservoir pour générer un flux contrôlé.<br>
+              <strong>Hydroélectricité au fil de l’eau</strong> : utilise le courant naturel sans retenue.<br>
+              <strong>Énergie marémotrice</strong> : exploite les marées en mer.
+            </td>
+          </tr>
+          <tr>
+            <td>Avantages</td>
+            <td>
+              - Renouvelable et prévisible<br>
+              - Grande capacité de production<br>
+              - Faible coût d’entretien<br>
+              - Permet le stockage de l’énergie (retenue d’eau)
+            </td>
+          </tr>
+          <tr>
+            <td>Inconvénients</td>
+            <td>
+              - Impact écologique (déplacement d’espèces, modification des cours d’eau)<br>
+              - Coûts initiaux élevés<br>
+              - Risques en cas de rupture de barrage
+            </td>
+          </tr>
+          <tr>
+            <td>Utilisations</td>
+            <td>
+              - Fourniture d’électricité à grande échelle<br>
+              - Soutien du réseau électrique en cas de forte demande<br>
+              - Irrigation, gestion des crues
+            </td>
+          </tr>
+          <tr>
+            <td>Impact environnemental</td>
+            <td>
+              Bien que propre en fonctionnement, l’impact écologique peut être significatif lors de la construction : inondation de terres, modification des écosystèmes, émissions de méthane dans certains réservoirs tropicaux.
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </main>
+
+  <footer>
+    <nav>
+      <a href="apropos.html">À propos</a>
+    </nav>
+  </footer>
+
+  <script src="/javascript/hydraulique.js"></script>
+</body>
+</html>
