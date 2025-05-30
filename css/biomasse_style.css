@@ -1,0 +1,37 @@
+body {
+  font-family: 'Arial', sans-serif;
+  text-align: center;
+  padding: 20px;
+}
+
+#scene {
+  position: relative;
+  display: inline-block;
+}
+
+#vache {
+  width: 300px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+#caca {
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 30px;
+  transition: width 0.3s ease;
+  z-index: 0;
+}
+
+.hidden {
+  display: none;
+}
+
+#secretMessage {
+  margin-top: 20px;
+  font-size: 1.3em;
+  color: brown;
+  font-weight: bold;
+}
