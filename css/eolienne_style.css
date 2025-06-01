@@ -18,7 +18,7 @@
 
 /* ✅ Clé ici : centre horizontal + top vertical */
 .palmes {
-  transform-origin: 50% 27.5%; /* Ajuste selon ton image : 0% = haut, 100% = bas */
+  transform-origin: 49.3% 27.4%; /* Ajuste selon ton image : 0% = haut, 100% = bas */
   z-index: 2;
   pointer-events: none;
 }
