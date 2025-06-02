@@ -6,8 +6,9 @@ function demarrerEolienne() {
   void pales.offsetWidth; 
   pales.classList.add("spin");
 
-  // Affiche le contenu après 3.5 secondes
+  // Affiche le contenu après 3 secondes puis scroll
   setTimeout(() => {
-    document.getElementById("content").style.display = "block";
-  }, 3500);
+    content.style.display = "block";
+    content.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }, 3000);
 }

@@ -16,5 +16,9 @@ function ajouterEau() {
   // Affiche le contenu quand toutes les colonnes sont remplies
   if (currentColonne === colonnes.length) {
     document.getElementById("content").style.display = "block";
+    // Scroll fluide juste après affichage
+    setTimeout(() => {
+      content.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }, 500);
   }
 }

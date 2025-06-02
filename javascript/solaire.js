@@ -10,8 +10,15 @@ function removeCloud(cloud) {
   cloudCount--;
 
   if (cloudCount === 0) {
+    const content = document.getElementById("content");
+
     setTimeout(() => {
-      document.getElementById("content").style.display = "block";
+      content.style.display = "block";
+
+      // Scroll fluide vers le contenu juste après affichage
+      setTimeout(() => {
+        content.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }, 100);
     }, 500);
   }
 }
