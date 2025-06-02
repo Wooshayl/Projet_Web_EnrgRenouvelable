@@ -1,11 +1,13 @@
-
-/* Modern Navigation Bar Styling */
+/* === STYLE GLOBAL DE LA PAGE === */
+/* Mise à zéro des marges/paddings et police par défaut */
 body {
   margin: 0;
   padding: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+/* === HEADER FIXE EN HAUT DE PAGE === */
+/* Barre supérieure avec logo, titre et effet sticky */
 header {
   background-color: #1a7431;
   padding: 0;
@@ -15,6 +17,7 @@ header {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
 }
 
+/* Conteneur du header : aligne le logo, le titre et l’icône ODD */
 .header-container {
   display: flex;
   justify-content: space-between;
@@ -24,6 +27,7 @@ header {
   margin: 0 auto;
 }
 
+/* Logos (gauche et droite) avec petit effet au survol */
 .logo, .odd7 {
   width: 60px;
   height: auto;
@@ -34,6 +38,7 @@ header {
   transform: scale(1.05);
 }
 
+/* Titre centré en blanc, avec effet d’ombre */
 .header-container h1 {
   flex: 1;
   text-align: center;
@@ -43,6 +48,8 @@ header {
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
 }
 
+/* === BARRE DE NAVIGATION === */
+/* Menu horizontal avec arrière-plan vert et séparation visuelle */
 nav {
   background-color: #1a7431;
   padding: 0;
@@ -51,6 +58,7 @@ nav {
   border-top: 2px solid rgba(255, 255, 255, 0.1);
 }
 
+/* Conteneur des liens nav, centré et limité en largeur */
 .nav-container {
   display: flex;
   justify-content: center;
@@ -58,6 +66,7 @@ nav {
   max-width: 1000px;
 }
 
+/* Style général des liens de navigation */
 nav a {
   text-decoration: none;
   color: white;
@@ -71,6 +80,7 @@ nav a {
   letter-spacing: 0.5px;
 }
 
+/* Ligne blanche animée sous le lien au survol */
 nav a::after {
   content: '';
   position: absolute;
@@ -91,6 +101,7 @@ nav a:hover::after {
   width: 70%;
 }
 
+/* Mise en avant du lien actif */
 nav a.active {
   background-color: rgba(255, 255, 255, 0.15);
 }
@@ -99,7 +110,7 @@ nav a.active::after {
   width: 70%;
 }
 
-/* Specific hover colors with smoother transitions */
+/* Couleurs de fond spécifiques par lien (hover) */
 nav a:first-child:hover {
   background-color: rgba(26, 188, 156, 0.3);
 }
@@ -112,7 +123,8 @@ nav a:nth-child(3):hover {
   background-color: rgba(231, 76, 60, 0.3);
 }
 
-/* Mobile navigation toggle */
+/* === BOUTON MENU (POUR VERSION MOBILE) === */
+/* Bouton hamburger affiché seulement en version mobile */
 .menu-toggle {
   display: none;
   background: none;
@@ -123,48 +135,49 @@ nav a:nth-child(3):hover {
   padding: 10px;
 }
 
-/* Responsive adjustments */
+/* === RESPONSIVE DESIGN POUR MOBILE === */
+/* Réorganisation de la navigation pour petits écrans */
 @media (max-width: 768px) {
   .header-container h1 {
     font-size: 1.4em;
   }
-  
+
   .menu-toggle {
     display: block;
   }
-  
+
   nav {
     flex-direction: column;
     display: none;
   }
-  
+
   nav.show {
     display: flex;
   }
-  
+
   .nav-container {
     flex-direction: column;
   }
-  
+
   nav a {
     padding: 15px;
     border-top: 1px solid rgba(255, 255, 255, 0.1);
   }
-  
+
   nav a::after {
     display: none;
   }
 }
 
+/* === LIENS DANS LE CORPS DE PAGE === */
 section a {
   color: #27AE60;
   font-style: italic;
 }
 
+/* === FOOTER SIMPLE === */
 footer {
   background-color: #1a7431;
   padding: 20px;
   text-align: center;
 }
-
-

@@ -1,3 +1,5 @@
+/* === CONTENEUR DU BARRAGE === */
+/* Contient l’image du barrage et les animations associées */
 .barrage-container {
     position: relative;
     width: 90%;
@@ -5,6 +7,7 @@
     margin: 30px auto;
 }
 
+/* Image principale du barrage */
 .barrage-img {
     width: 100%;
     display: block;
@@ -12,20 +15,20 @@
     position: relative;
 }
 
-/* 👇 Zone de masquage sur les ouvertures du barrage */
+/* === MASQUE AU NIVEAU DES OUVERTURES === */
+/* Zone dans laquelle les colonnes d’eau vont s’animer */
 .mask {
     position: absolute;
-    top: 45%;
-    /* ajuste selon ta capture */
+    top: 45%; /* ajusté selon l’image */
     left: 0;
     width: 100%;
     height: 35%;
-    /* hauteur de la zone à remplir */
     z-index: 2;
     pointer-events: none;
 }
 
-/* Colonnes d’eau maintenant restreintes à la zone mask */
+/* === COLONNES D’EAU DYNAMIQUES === */
+/* Colonne d'eau qui monte lors de l'activation */
 .eau-colonne {
     position: absolute;
     bottom: 0;
@@ -36,7 +39,7 @@
     border-radius: 2px;
 }
 
-/* Ajuster la position horizontale selon l’image */
+/* Position de chaque colonne (à ajuster selon l'image) */
 .colonne1 {
     left: 33.6%;
     width: 8.3%;
@@ -55,6 +58,8 @@
     transform: skewX(3deg);
 }
 
+/* === BOUTON POMPE INTERACTIF === */
+/* Bloc contenant l’image cliquable de la pompe */
 .pompe-zone {
     position: absolute;
     right: -110px;
@@ -69,20 +74,24 @@
     transition: transform 0.2s ease;
 }
 
+/* Effet zoom au survol de la pompe */
 .pompe-zone:hover {
     transform: scale(1.05);
 }
 
+/* Image de la pompe cliquable */
 .pompe {
     width: 60px;
     cursor: pointer;
     transition: transform 0.2s;
 }
 
+/* Effet visuel au clic de la pompe */
 .pompe:active {
     transform: scale(1.1) rotate(-10deg);
 }
 
+/* Texte sous la pompe */
 .pompe-zone p {
     margin: 8px 0 0;
     font-weight: bold;
@@ -90,7 +99,8 @@
     color: #1565c0;
 }
 
-
+/* === ZONE DE TEXTE APPARAISSANT APRÈS ACTIVATION === */
+/* Bloc explicatif masqué par défaut */
 #content {
     display: none;
     margin: 30px auto;
@@ -101,6 +111,8 @@
     max-width: 700px;
 }
 
+/* === TABLEAU DANS LA ZONE DE CONTENU === */
+/* Tableau d’infos explicatives (type fonctionnement ou données) */
 table {
     width: 100%;
     border-collapse: collapse;
@@ -113,6 +125,7 @@ td {
     text-align: left;
 }
 
+/* Ligne d’en-tête du tableau en bleu clair */
 th {
     background-color: #90caf9;
 }

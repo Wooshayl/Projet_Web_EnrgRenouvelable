@@ -1,15 +1,17 @@
-/* solaire_style.css */
-
+/* === SCÈNE SOLAIRE INTERACTIVE === */
+/* Conteneur global de l’animation : soleil + nuages */
 .scene {
   position: relative;
   width: 300px;
   margin: 50px auto;
 }
 
+/* Image fixe représentant le soleil */
 .sun {
   width: 300px;
 }
 
+/* Nuages positionnés au-dessus du soleil, cliquables */
 .cloud {
   position: absolute;
   width: 100px;
@@ -18,11 +20,13 @@
   z-index: 2;
 }
 
-
+/* Légère animation de zoom quand on survole un nuage */
 .cloud:hover {
   transform: scale(1.1);
 }
 
+/* === ZONE DE TEXTE AFFICHÉE APRÈS INTERACTION === */
+/* Bloc caché au début, qui apparaît après le clic */
 #content {
   display: none;
   text-align: center;
@@ -35,11 +39,14 @@
   margin-right: auto;
 }
 
+/* Titre principal du contenu révélé */
 #content h3 {
   margin-bottom: 1rem;
   color: #1a7431;
 }
 
+/* === TABLEAU D'INFORMATION === */
+/* Tableau centré dans le contenu, avec mise en forme simple */
 #content table {
   margin: 0 auto;
   border-collapse: collapse;

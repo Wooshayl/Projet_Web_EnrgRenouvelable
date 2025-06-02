@@ -1,3 +1,5 @@
+/* === CONTENEUR DE L'ÉOLIENNE === */
+/* Bloc qui contient l'image de l'éolienne (base + palmes), centré et responsive */
 .eolienne-container {
   position: relative;
   width: 40vw;
@@ -6,6 +8,7 @@
   aspect-ratio: 1 / 1;
 }
 
+/* Positionnement absolu des images à l'intérieur (base et pales) */
 .eolienne-base,
 .palmes {
   position: absolute;
@@ -16,28 +19,33 @@
   display: block;
 }
 
-/* ✅ Clé ici : centre horizontal + top vertical */
+/* === PALES DE L'ÉOLIENNE === */
+/* Les palmes tournent autour d’un point défini avec transform-origin */
 .palmes {
-  transform-origin: 50% 27.5%; /* Ajuste selon ton image : 0% = haut, 100% = bas */
+  transform-origin: 49.3% 27.4%; /* Centre approximatif de rotation des palmes */
   z-index: 2;
-  pointer-events: none;
+  pointer-events: none; /* Empêche les clics sur l’image */
 }
 
+/* Classe qui déclenche l’animation de rotation */
 .spin {
   animation: rotate 5s linear forwards;
 }
 
+/* Animation de rotation de 5 tours (1800°) */
 @keyframes rotate {
   from { transform: rotate(0deg); }
-  to { transform: rotate(1800deg); } /* 5 tours */
+  to { transform: rotate(1800deg); }
 }
 
-
+/* === BOUTON POUR LANCER L'ANIMATION === */
+/* Conteneur du bouton centré */
 .btn-container {
   text-align: center;
   margin-top: 20px;
 }
 
+/* Style du bouton interactif */
 button {
   padding: 10px 20px;
   background-color: #f9c74f;
@@ -47,6 +55,8 @@ button {
   cursor: pointer;
 }
 
+/* === ZONE DE TEXTE DÉVOILÉE APRÈS CLIC === */
+/* Contenu pédagogique masqué par défaut */
 #content {
   display: none;
   max-width: 800px;

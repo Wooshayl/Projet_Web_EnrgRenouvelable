@@ -1,9 +1,12 @@
+/* === STYLE GÉNÉRAL DE LA PAGE === */
+/* Mise en page du body : police, suppression des marges/paddings */
 body {
   margin: 0;
   padding: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+/* Conteneur principal du quiz, centré avec fond blanc */
 main {
   padding: 2rem;
   max-width: 800px;
@@ -13,7 +16,8 @@ main {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Quiz title */
+/* === TITRE DU QUIZ === */
+/* Mise en forme du titre h2 */
 main h2 {
   color: #1a7431;
   text-align: center;
@@ -21,7 +25,8 @@ main h2 {
   font-size: 1.8rem;
 }
 
-/* Quiz sections */
+/* === BLOCS DE QUESTIONS === */
+/* Chaque section représente une question (encadré, fond clair) */
 section {
   margin-bottom: 1.5rem;
   padding: 1.5rem;
@@ -30,23 +35,27 @@ section {
   transition: transform 0.2s;
 }
 
+/* Effet au survol pour mettre en valeur une question */
 section:hover {
   transform: translateY(-5px);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Question styling */
+/* === STYLE DES QUESTIONS === */
+/* Mise en forme des paragraphes de questions */
 form p {
   font-size: 1.2rem;
   margin-bottom: 1rem;
   color: #333;
 }
 
+/* Le texte en gras (numéro ou titre de la question) en vert */
 form p strong {
   color: #1a7431;
 }
 
-/* Radio and checkbox options */
+/* === OPTIONS RADIO / CHECKBOX === */
+/* Bloc contenant chaque réponse possible (cliquable et réactif) */
 label {
   display: block;
   margin: 0.7rem 0;
@@ -56,17 +65,20 @@ label {
   transition: background-color 0.2s;
 }
 
+/* Effet visuel au survol d'une réponse */
 label:hover {
   background-color: rgba(26, 116, 49, 0.1);
 }
 
+/* Style des cases à cocher ou boutons radio */
 input[type="radio"],
 input[type="checkbox"] {
   margin-right: 10px;
   cursor: pointer;
 }
 
-/* Text input styling */
+/* === CHAMP DE RÉPONSE LIBRE === */
+/* Champ texte pour écrire une réponse personnelle */
 input[type="text"] {
   width: 100%;
   padding: 0.8rem;
@@ -76,13 +88,15 @@ input[type="text"] {
   transition: border-color 0.3s;
 }
 
+/* Effet focus quand on clique dans le champ */
 input[type="text"]:focus {
   outline: none;
   border-color: #1a7431;
   box-shadow: 0 0 0 2px rgba(26, 116, 49, 0.2);
 }
 
-/* Button styling to match the site's CTA buttons */
+/* === BOUTON DE VALIDATION === */
+/* Style du bouton "Soumettre", identique au style du site */
 button {
   display: block;
   margin: 2rem auto 1rem;
@@ -97,11 +111,13 @@ button {
   transition: background-color 0.3s;
 }
 
+/* Effet hover pour le bouton */
 button:hover {
   background-color: #f3b711;
 }
 
-/* Results section */
+/* === AFFICHAGE DES RÉSULTATS === */
+/* Zone qui montre le score après avoir soumis le quiz */
 #resultat {
   margin-top: 2rem;
   padding: 1.5rem;
@@ -112,13 +128,14 @@ button:hover {
   transition: all 0.3s;
 }
 
-/* When results are shown, add a success style */
+/* Variante visuelle pour un score réussi (couleur verte) */
 #resultat.success {
   background-color: rgba(26, 116, 49, 0.1);
   color: #1a7431;
 }
 
-/* Responsive adjustments */
+/* === RESPONSIVE DESIGN === */
+/* Ajustements pour les écrans mobiles (moins de padding, taille réduite) */
 @media (max-width: 768px) {
   main {
     padding: 1.5rem;

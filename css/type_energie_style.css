@@ -1,3 +1,5 @@
+/* === STYLES GÉNÉRAUX === */
+/* Définition de la base : marges, police, couleur de fond */
 body {
   margin: 0;
   padding: 0;
@@ -12,7 +14,8 @@ h1 {
   color: #3c403b;
 }
 
-/* Card section enhancements */
+/* === SECTION DE CARTES INTERACTIVES === */
+/* Titre + description + conteneur des cartes */
 .card-section {
   margin-bottom: 40px;
   text-align: center;
@@ -28,32 +31,35 @@ h1 {
   color: #666;
 }
 
+/* Conteneur de toutes les cartes (flexible et responsive) */
 .card-container {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  /* allows wrapping if screen is small */
   gap: 20px;
   padding: 40px;
 }
 
+/* Ajoute un effet 3D pour le retournement de carte */
 .container {
   perspective: 1000px;
 }
 
+/* Style général des cartes (avec animation de rotation) */
 .card {
   width: 240px;
   height: 320px;
   position: relative;
   transform-style: preserve-3d;
-  transition: transform 0.8s
+  transition: transform 0.8s;
 }
 
 .container:hover .card {
   transform: rotateY(180deg);
 }
 
+/* Faces de la carte (recto/verso) */
 .front,
 .back {
   position: absolute;
@@ -67,20 +73,17 @@ h1 {
   box-sizing: border-box;
 }
 
+/* Face avant : image + titre + texte en bas */
 .front {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-end;
-  /* Push text down */
   background-size: cover;
   background-position: center;
   color: white;
-  /* Optional: better contrast */
   padding-bottom: 30px;
-  /* Add spacing below */
 }
-
 
 .front h2 {
   color: white;
@@ -92,21 +95,17 @@ h1 {
   color: #777;
 }
 
+/* Face arrière : informations supplémentaires */
 .back {
   transform: rotateY(180deg);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /* Center items horizontally */
   text-align: center;
-  /* Center text */
   padding: 30px 20px;
-  /* More padding for better spacing */
   background-color: #f8f9fa;
-  /* Light background color */
   color: #333;
-  /* Darker text for better readability */
 }
 
 .back h2 {
@@ -115,13 +114,11 @@ h1 {
 
 .back p {
   margin: 0 0 25px;
-  /* Add space below paragraph */
   line-height: 1.5;
-  /* Better line spacing */
   font-size: 1.05rem;
-  /* Slightly larger font */
 }
 
+/* Bouton vers d’autres pages ou actions */
 .nav-btn {
   padding: 10px 20px;
   background-color: #367656;
@@ -132,22 +129,18 @@ h1 {
   font-weight: bold;
   transition: background-color 0.3s, transform 0.2s;
   text-decoration: none;
-  /* Remove underline */
   display: inline-block;
-  /* Better button behavior */
   margin-top: 10px;
-  /* Space above button */
 }
 
 .nav-btn:hover {
   background-color: #2a5e48;
   transform: translateY(-3px);
-  /* Slight hover effect */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  /* Add shadow on hover */
 }
 
-/* Comparison table */
+/* === SECTION TABLEAU COMPARATIF === */
+/* Section contenant un tableau de comparaison stylisé */
 .comparison-section {
   margin-bottom: 40px;
   max-width: 80%;
@@ -160,10 +153,12 @@ h1 {
   margin-bottom: 20px;
 }
 
+/* Conteneur scrollable si l’écran est trop petit */
 .table-container {
   overflow-x: auto;
 }
 
+/* Tableau avec en-tête et effet sur les lignes */
 .comparison-table {
   width: 100%;
   border-collapse: collapse;
@@ -187,6 +182,7 @@ h1 {
   font-size: 0.95rem;
 }
 
+/* Alternance de couleur une ligne sur deux + effet hover */
 .comparison-table tr:nth-child(even) {
   background-color: #f8f9fa;
 }
