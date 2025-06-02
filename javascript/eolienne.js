@@ -1,12 +1,12 @@
 function demarrerEolienne() {
   const pales = document.getElementById("palmes");
 
-  // Reset animation
+  // Relance propre de l'animation
   pales.classList.remove("spin");
   void pales.offsetWidth; 
   pales.classList.add("spin");
 
-  // Affiche contenu après 5s
+  // Affiche le contenu après 3.5 secondes
   setTimeout(() => {
     document.getElementById("content").style.display = "block";
   }, 3500);

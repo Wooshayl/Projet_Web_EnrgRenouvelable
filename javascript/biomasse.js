@@ -1,32 +1,33 @@
+// Compteur et éléments
 let clickCount = 0;
-const maxClicks = 10; // Define the maximum number of clicks needed
+const maxClicks = 10;
 const caca = document.getElementById("caca");
 const content = document.getElementById("content");
 
+// Clic sur la vache
 document.getElementById("vache").addEventListener("click", () => {
-  // Only increment clicks if we haven't reached the maximum
   if (clickCount < maxClicks) {
     clickCount++;
-  
-    // Afficher le caca si caché
+
+    // Affiche le caca au premier clic
     if (caca.classList.contains("hidden")) {
       caca.classList.remove("hidden");
     }
 
-    // Augmenter la taille du caca jusqu'à la limite
+    // Agrandit progressivement le caca
     const newSize = 30 + clickCount * 10;
     caca.style.width = `${newSize}px`;
-  
-    // Afficher le contenu quand on atteint le nombre requis de clics
+
+    // Une fois le max atteint, affiche le contenu
     if (clickCount === maxClicks) {
       content.style.display = "block";
-      
-      // Scroll to the content
+
+      // Scroll fluide vers le contenu
       setTimeout(() => {
         content.scrollIntoView({ behavior: 'smooth', block: 'start' });
       }, 100);
-      
-      // Optional: Add a completion effect
+
+      // Effet final optionnel
       caca.classList.add('completed');
     }
   }
