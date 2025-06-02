@@ -6,8 +6,8 @@ body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-/* === HEADER FIXE EN HAUT DE PAGE === */
-/* Barre supérieure avec logo, titre et effet sticky */
+/*=== HEADER FIXE EN HAUT DE PAGE === */
+/* Barre supérieure avec logo, titre et effet sticky */ 
 header {
   background-color: #1a7431;
   padding: 0;
