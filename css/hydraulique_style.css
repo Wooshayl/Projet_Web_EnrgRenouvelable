@@ -1,13 +1,16 @@
 /* Hydraulic page specific styles */
 .barrage-container {
   position: relative;
-  width: 90%;
+  width: 100%;
   max-width: 500px;
   margin: 0 auto;
+  overflow: hidden;
 }
 
 .barrage-img {
   width: 100%;
+  max-width: 500px;
+  height: auto;
   display: block;
   z-index: 1;
   position: relative;
@@ -56,7 +59,8 @@
   position: absolute;
   top: 15%;
   right: 15%;
-  width: 45px;
+  width: 15%; /* Percentage-based width */
+  max-width: 60px;
   cursor: pointer;
   transition: transform 0.3s ease;
   z-index: 5;
@@ -73,15 +77,21 @@
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
-  .pompe {
-    width: 40px;
+  .barrage-container {
+    max-width: 400px;
+  }
+  
+  .barrage-img {
+    max-width: 400px;
   }
 }
 
 @media (max-width: 480px) {
-  .pompe {
-    width: 35px;
-    right: 8%;
-    bottom: 8%;
+  .barrage-container {
+    max-width: 300px;
+  }
+  
+  .barrage-img {
+    max-width: 300px;
   }
 }

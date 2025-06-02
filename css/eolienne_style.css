@@ -1,14 +1,15 @@
 /* Wind energy page specific styles */
 .eolienne-scene {
   position: relative;
-  max-width: 400px;
+  max-width: 500px;
   margin: 0 auto;
+  margin-bottom: -20%;
 }
 
 .eolienne-container {
   position: relative;
   width: 40vw;
-  max-width: 300px;
+  max-width: 500px;
   margin: 0 auto;
   aspect-ratio: 1 / 1;
 }
@@ -32,8 +33,9 @@
 /* Wind icon styling */
 .wind-icon {
   position: absolute;
-  left: 10px;
-  width: 80px;
+  top: 20px;
+  left: 40px;
+  width: 100px;
   height: auto;
   cursor: pointer;
   transition: transform 0.3s ease;
