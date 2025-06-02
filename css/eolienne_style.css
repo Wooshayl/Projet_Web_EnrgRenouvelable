@@ -3,7 +3,7 @@
   position: relative;
   max-width: 500px;
   margin: 0 auto;
-  margin-bottom: -20%;
+  margin-bottom: -18%;
 }
 
 .eolienne-container {
@@ -33,9 +33,9 @@
 /* Wind icon styling */
 .wind-icon {
   position: absolute;
-  top: 20px;
-  left: 40px;
-  width: 100px;
+  top: 5%;
+  left: 10%;
+  width: 20%;
   height: auto;
   cursor: pointer;
   transition: transform 0.3s ease;
@@ -58,23 +58,4 @@
 @keyframes rotate {
   from { transform: rotate(0deg); }
   to { transform: rotate(1800deg); }
-}
-
-/* Responsive adjustments */
-@media (max-width: 768px) {
-  .wind-icon {
-    right: -40px;
-    width: 60px;
-  }
-}
-
-@media (max-width: 480px) {
-  .eolienne-container {
-    width: 60vw;
-  }
-  
-  .wind-icon {
-    right: -30px;
-    width: 50px;
-  }
 }
