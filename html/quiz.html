@@ -22,48 +22,54 @@
   </header>
 
   <main>
-    <form id="quiz-form">
+  <form id="quiz-form">
 
-      <section>
-        <p><strong>1. Quelle énergie est renouvelable ?</strong></p>
-        <label><input type="radio" name="q1" value="1"> Charbon</label><br>
-        <label><input type="radio" name="q1" value="2"> Solaire</label><br>
-        <label><input type="radio" name="q1" value="3"> Gaz naturel</label>
-      </section><br>
+    <section>
+      <h2>Question 1</h2>
+      <p><strong>Quelle énergie est renouvelable ?</strong></p>
+      <label><input type="radio" name="q1" value="1"> Charbon</label><br>
+      <label><input type="radio" name="q1" value="2"> Solaire</label><br>
+      <label><input type="radio" name="q1" value="3"> Gaz naturel</label>
+    </section><br>
 
-      <section>
-        <p><strong>2. Quelle énergie dépend du vent ?</strong></p>
-        <label><input type="radio" name="q2" value="1"> Éolienne</label><br>
-        <label><input type="radio" name="q2" value="2"> Hydraulique</label><br>
-        <label><input type="radio" name="q2" value="3"> Nucléaire</label>
-      </section><br>
+    <section>
+      <h2>Question 2</h2>
+      <p><strong>Quelle énergie dépend du vent ?</strong></p>
+      <label><input type="radio" name="q2" value="1"> Éolienne</label><br>
+      <label><input type="radio" name="q2" value="2"> Hydraulique</label><br>
+      <label><input type="radio" name="q2" value="3"> Nucléaire</label>
+    </section><br>
 
-      <section>
-        <p><strong>3. Quelle est la source principale de l’énergie solaire ?</strong></p>
-        <label><input type="radio" name="q3" value="1"> La Terre</label><br>
-        <label><input type="radio" name="q3" value="2"> La Lune</label><br>
-        <label><input type="radio" name="q3" value="3"> Le Soleil</label>
-      </section><br>
+    <section>
+      <h2>Question 3</h2>
+      <p><strong>Quelle est la source principale de l’énergie solaire ?</strong></p>
+      <label><input type="radio" name="q3" value="1"> La Terre</label><br>
+      <label><input type="radio" name="q3" value="2"> La Lune</label><br>
+      <label><input type="radio" name="q3" value="3"> Le Soleil</label>
+    </section><br>
 
-      <section>
-        <p><strong>4. Quelles sont les énergies renouvelables ? (plusieurs réponses possibles)</strong></p>
-        <label><input type="checkbox" name="q4" value="solaire"> Solaire</label><br>
-        <label><input type="checkbox" name="q4" value="charbon"> Charbon</label><br>
-        <label><input type="checkbox" name="q4" value="eolienne"> Éolienne</label><br>
-        <label><input type="checkbox" name="q4" value="gaz"> Gaz naturel</label><br>
-        <label><input type="checkbox" name="q4" value="hydraulique"> Hydraulique</label>
-      </section><br>
+    <section>
+      <h2>Question 4</h2>
+      <p><strong>Quelles sont les énergies renouvelables ? (plusieurs réponses possibles)</strong></p>
+      <label><input type="checkbox" name="q4" value="solaire"> Solaire</label><br>
+      <label><input type="checkbox" name="q4" value="charbon"> Charbon</label><br>
+      <label><input type="checkbox" name="q4" value="eolienne"> Éolienne</label><br>
+      <label><input type="checkbox" name="q4" value="gaz"> Gaz naturel</label><br>
+      <label><input type="checkbox" name="q4" value="hydraulique"> Hydraulique</label>
+    </section><br>
 
-      <section>
-        <p><strong>5. Quels sont les avantages des énergies renouvellables ? Donnez des exemples :</strong></p>
-        <input type="text" name="q5" placeholder="Votre réponse..." style="width:100%; padding:8px;">
-      </section><br>
+    <section>
+      <h2>Question 5</h2>
+      <p><strong>Quels sont les avantages des énergies renouvelables ? Donnez des exemples :</strong></p>
+      <input type="text" name="q5" placeholder="Votre réponse..." style="width:100%; padding:8px;">
+    </section><br>
 
-      <button type="button" onclick="corrigerQuiz()">Soumettre</button>
-    </form>
+    <button type="button" onclick="corrigerQuiz()">Soumettre</button>
+  </form>
 
-    <div id="resultat"></div>
-  </main>
+  <div id="resultat"></div>
+</main>
+
 
   <footer>
     <nav>
