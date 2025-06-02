@@ -1,17 +1,23 @@
 /* Solar page specific styles */
 .scene {
   position: relative;
-  width: 300px;
+  width: 100%;
+  max-width: 500px;
   margin: 0 auto;
+  overflow: hidden; /* Prevent clouds from going outside container */
 }
 
 .sun {
-  width: 300px;
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  display: block;
 }
 
 .cloud {
   position: absolute;
-  width: 100px;
+  width: 40%; /* Percentage-based width for responsiveness */
+  max-width: 200px;
   cursor: pointer;
   transition: opacity 0.5s, transform 0.5s;
   z-index: 2;
@@ -19,4 +25,17 @@
 
 .cloud:hover {
   transform: scale(1.1);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .scene {
+    max-width: 400px;
+  }
+}
+
+@media (max-width: 480px) {
+  .scene {
+    max-width: 300px;
+  }
 }
