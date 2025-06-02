@@ -1,17 +1,18 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Biomasse - Vache</title>
-  <link rel="stylesheet" href="../css/styles.css" />
-  <link rel="stylesheet" href="../css/biomasse_style.css" />
+  <meta charset="UTF-8">
+  <title>Énergie de Biomasse</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="stylesheet" href="../css/energie_type_common.css">
+  <link rel="stylesheet" href="../css/biomasse_style.css">
 </head>
 <body>
   <header>
     <div class="header-container">
       <img src="../img/Logo.png" alt="Logo site" class="logo">
-      <h1>Biomasse</h1>
+      <h1>Énergie de Biomasse</h1>
       <img src="../img/ODD7.png" alt="Logo ODD 7" class="odd7">
     </div>
     <nav>
@@ -20,26 +21,30 @@
       <a href="quiz.html">Quiz</a>
     </nav>
   </header>
-  <main>
-    <h2>Cliquez sur la vache</h2>
-    <div id="scene">
-      <img id="vache" src="../img/Vache.png" alt="Vache" />
-      <img id="caca" src="../img/caca.png" alt="Caca" class="hidden" />
-    </div>
-    
 
-    <div id="secretMessage" class="hidden">
+  <main>
+    <h2 class="page-title">Découvrez l'énergie de biomasse</h2>
+    
+    <div class="interactive-container">
+      <p class="instructions">Cliquez sur la vache pour découvrir l'énergie de biomasse</p>
       
+      <div id="scene">
+        <img id="vache" src="../img/Vache.png" alt="Vache" />
+        <img id="caca" src="../img/caca.png" alt="Caca" class="hidden" />
+      </div>
+    </div>
+
+    <div id="content" class="content-sections">
       <section>
         <h2>Qu'est-ce que la biomasse ?</h2>
         <p>
-          La biomasse désigne l’ensemble des matières organiques d’origine végétale ou animale pouvant être transformées en énergie. 
+          La biomasse désigne l'ensemble des matières organiques d'origine végétale ou animale pouvant être transformées en énergie. 
           Elle provient principalement des déchets agricoles, forestiers, ménagers ou encore de cultures dédiées à la production énergétique.
         </p>
       </section>
 
       <section>
-        <h2>Comment la biomasse produit-elle de l’énergie ?</h2>
+        <h2>Comment la biomasse produit-elle de l'énergie ?</h2>
         <ul>
           <li><strong>Combustion :</strong> brûlage du bois ou des déchets pour produire chaleur et électricité.</li>
           <li><strong>Méthanisation :</strong> transformation des matières organiques (ex : fumier) en biogaz par des bactéries.</li>
@@ -68,17 +73,26 @@
       </section>
 
       <section>
-        <h2>Exemple d'application</h2>
+        <h2>Applications courantes</h2>
+        <ul>
+          <li>Chauffage domestique (poêles à bois, chaudières à granulés)</li>
+          <li>Production d'électricité dans des centrales biomasse</li>
+          <li>Production de biogaz pour le réseau ou les transports</li>
+          <li>Biocarburants pour l'industrie des transports</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Impact environnemental</h2>
         <p>
-          En France, des centrales biomasse brûlent des déchets de bois pour produire de l’électricité. 
-          Certaines fermes utilisent la méthanisation pour transformer le fumier de vaches en biogaz utilisé pour le chauffage ou les transports.
+          La biomasse est considérée comme neutre en carbone lorsque son utilisation est durable, car le CO₂ émis lors de la combustion est compensé par celui absorbé lors de la croissance des plantes. Cependant, les impacts sur la biodiversité et les sols doivent être surveillés, particulièrement pour les cultures énergétiques.
         </p>
       </section>
 
       <section>
         <h2>Le saviez-vous ?</h2>
         <p>
-          Une seule vache peut produire jusqu’à 30 kg de fumier par jour, qui peut ensuite être transformé en énergie renouvelable.
+          Une seule vache peut produire jusqu'à 30 kg de fumier par jour, qui peut ensuite être transformé en énergie renouvelable via la méthanisation.
         </p>
       </section>
 

@@ -5,10 +5,10 @@
   <title>Énergie Hydraulique</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../css/styles.css">
+  <link rel="stylesheet" href="../css/energie_type_common.css">
   <link rel="stylesheet" href="../css/hydraulique_style.css">
 </head>
 <body>
-
   <header>
     <div class="header-container">
       <img src="../img/Logo.png" alt="Logo site" class="logo">
@@ -23,79 +23,89 @@
   </header>
 
   <main>
-    <h2 style="text-align: center;">Cliquez sur la pompe pour remplir le barrage !</h2>
+    <h2 class="page-title">Découvrez l'énergie hydraulique</h2>
+    
+    <div class="interactive-container">
+      <p class="instructions">Cliquez sur la pompe pour remplir le barrage !</p>
 
-    <div class="barrage-container">
-  <img src="../img/barrage.png" class="barrage-img" alt="Barrage">
+      <div class="barrage-container">
+        <img src="../img/barrage.png" class="barrage-img" alt="Barrage">
+        <div class="mask">
+          <div class="eau-colonne colonne1"></div>
+          <div class="eau-colonne colonne2"></div>
+          <div class="eau-colonne colonne3"></div>
+        </div>
+        <img src="../img/pompe.png" class="pompe" alt="Pompe" onclick="ajouterEau()">
+      </div>
+    </div>
 
-  <div class="mask">
-    <div class="eau-colonne colonne1"></div>
-    <div class="eau-colonne colonne2"></div>
-    <div class="eau-colonne colonne3"></div>
-  </div>
+    <div id="content" class="content-sections">
+      <section>
+        <h2>Qu'est-ce que l'énergie hydraulique ?</h2>
+        <p>
+          L'énergie hydraulique est produite par le mouvement de l'eau (cours d'eau, barrages, marées), transformé en électricité grâce à des turbines.
+        </p>
+      </section>
 
-  <div class="pompe-zone">
-    <img src="../img/pompe.png" class="pompe" alt="Pompe" onclick="ajouterEau()">
-    <p>Cliquez ici</p>
-  </div>
-</div>
+      <section>
+        <h2>Comment fonctionne l'énergie hydraulique ?</h2>
+        <ul>
+          <li><strong>Hydroélectricité par barrage</strong> : stockage de l'eau dans un réservoir pour générer un flux contrôlé.</li>
+          <li><strong>Hydroélectricité au fil de l'eau</strong> : utilise le courant naturel sans retenue.</li>
+          <li><strong>Énergie marémotrice</strong> : exploite les marées en mer.</li>
+        </ul>
+      </section>
 
+      <section>
+        <h2>Avantages de l'énergie hydraulique</h2>
+        <ul>
+          <li>Renouvelable et prévisible</li>
+          <li>Grande capacité de production</li>
+          <li>Faible coût d'entretien</li>
+          <li>Permet le stockage de l'énergie (retenue d'eau)</li>
+        </ul>
+      </section>
 
-    <div id="content">
-      <h3>L’énergie hydraulique – Informations clés</h3>
-      <table>
-        <thead>
-          <tr>
-            <th>Aspect</th>
-            <th>Description</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Définition</td>
-            <td>L’énergie hydraulique est produite par le mouvement de l’eau (cours d’eau, barrages, marées), transformé en électricité grâce à des turbines.</td>
-          </tr>
-          <tr>
-            <td>Types</td>
-            <td>
-              <strong>Hydroélectricité par barrage</strong> : stockage de l’eau dans un réservoir pour générer un flux contrôlé.<br>
-              <strong>Hydroélectricité au fil de l’eau</strong> : utilise le courant naturel sans retenue.<br>
-              <strong>Énergie marémotrice</strong> : exploite les marées en mer.
-            </td>
-          </tr>
-          <tr>
-            <td>Avantages</td>
-            <td>
-              - Renouvelable et prévisible<br>
-              - Grande capacité de production<br>
-              - Faible coût d’entretien<br>
-              - Permet le stockage de l’énergie (retenue d’eau)
-            </td>
-          </tr>
-          <tr>
-            <td>Inconvénients</td>
-            <td>
-              - Impact écologique (déplacement d’espèces, modification des cours d’eau)<br>
-              - Coûts initiaux élevés<br>
-              - Risques en cas de rupture de barrage
-            </td>
-          </tr>
-          <tr>
-            <td>Utilisations</td>
-            <td>
-              - Fourniture d’électricité à grande échelle<br>
-              - Soutien du réseau électrique en cas de forte demande<br>
-              - Irrigation, gestion des crues
-            </td>
-          </tr>
-          <tr>
-            <td>Impact environnemental</td>
-            <td>
-              Bien que propre en fonctionnement, l’impact écologique peut être significatif lors de la construction : inondation de terres, modification des écosystèmes, émissions de méthane dans certains réservoirs tropicaux.
-            </td>
-          </tr>
-        </tbody>
-      </table>
+      <section>
+        <h2>Limites et défis</h2>
+        <ul>
+          <li>Impact écologique (déplacement d'espèces, modification des cours d'eau)</li>
+          <li>Coûts initiaux élevés</li>
+          <li>Risques en cas de rupture de barrage</li>
+          <li>Sites appropriés limités géographiquement</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Applications courantes</h2>
+        <ul>
+          <li>Fourniture d'électricité à grande échelle</li>
+          <li>Soutien du réseau électrique en cas de forte demande</li>
+          <li>Irrigation, gestion des crues</li>
+          <li>Réservoirs pour les activités récréatives (lac artificiel)</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Impact environnemental</h2>
+        <p>
+          Bien que propre en fonctionnement, l'impact écologique peut être significatif lors de la construction : inondation de terres, modification des écosystèmes, émissions de méthane dans certains réservoirs tropicaux.
+        </p>
+      </section>
+
+      <section>
+        <h2>Le saviez-vous ?</h2>
+        <p>
+          Le barrage des Trois Gorges en Chine est le plus grand barrage hydroélectrique du monde, avec une capacité de 22 500 MW, soit l'équivalent de 20 centrales nucléaires !
+        </p>
+      </section>
+
+      <section>
+        <h2>Activité interactive</h2>
+        <p>
+          Tu peux maintenant tester tes connaissances en lançant le <a href="quiz.html">quiz sur l'énergie hydraulique</a>.
+        </p>
+      </section>
     </div>
   </main>
 

@@ -1,44 +1,10 @@
-/* === STYLES GÉNÉRAUX DE LA PAGE === */
-/* Mise en forme de base du corps : police, couleur, centrage, fond */
-body {
-  font-family: 'Arial', sans-serif;
-  text-align: center;
-  padding: 20px;
-  background-color: #f4f4f4;
-  color: #333;
-  margin: 0;
-}
-
-/* Titres principaux en vert */
-h1, h2 {
-  color: #2e6e4c;
-}
-
-/* Réduction de taille des logos */
-.logo, .odd7 {
-  width: 60px;
-}
-
-/* === CONTENEUR PRINCIPAL === */
-/* Mise en forme du bloc principal avec fond blanc et ombre */
-main {
-  max-width: 1000px;
-  margin: auto;
-  padding: 20px;
-  background-color: #fff;
-  border-radius: 12px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-/* === ZONE INTERACTIVE (vache + caca) === */
-/* Positionnement de la vache dans un bloc centré */
+/* Biomass page specific styles */
 #scene {
   position: relative;
   display: inline-block;
-  margin-top: 20px;
+  margin: 20px auto;
 }
 
-/* Style de la vache (image cliquable avec effet au survol) */
 #vache {
   width: 300px;
   cursor: pointer;
@@ -50,7 +16,6 @@ main {
   transform: scale(1.05);
 }
 
-/* Le caca s'affiche sous la vache et grossit avec les clics */
 #caca {
   position: absolute;
   bottom: -20px;
@@ -61,65 +26,13 @@ main {
   z-index: 0;
 }
 
-/* Classe utilitaire pour masquer un élément */
 .hidden {
   display: none;
 }
 
-/* === ZONE DE TEXTE RÉVÉLÉE APRÈS LES 10 CLICS === */
-/* Bloc contenant le texte pédagogique, qui apparaît en fondu */
+/* Override the specific styling from biomasse to match other pages */
 #secretMessage {
-  margin-top: 30px;
-  padding: 20px;
-  background-color: #e9f8ec;
-  border-left: 5px solid #2e6e4c;
-  font-size: 1.1em;
-  text-align: left;
-  animation: fadeIn 1s ease forwards;
+  display: none; /* This will be shown by JavaScript */
 }
 
-/* Mise en forme des sections internes dans le message révélé */
-#secretMessage section {
-  margin-bottom: 20px;
-}
-
-#secretMessage h2 {
-  margin-bottom: 10px;
-  color: #2e6e4c;
-}
-
-#secretMessage ul {
-  list-style-type: disc;
-  margin: 10px 0 20px 40px;
-  text-align: left;
-}
-
-#secretMessage p {
-  text-align: left;
-}
-
-/* === PIED DE PAGE === */
-/* Footer vert foncé avec texte blanc */
-footer {
-  margin-top: 40px;
-  padding: 10px;
-  background-color: #2e6e4c;
-  color: white;
-}
-
-/* Liens dans le footer */
-footer nav a {
-  color: white;
-  text-decoration: none;
-}
-
-footer nav a:hover {
-  text-decoration: underline;
-}
-
-/* === ANIMATION === */
-/* Animation de fondu pour l’apparition du texte caché */
-@keyframes fadeIn {
-  from { opacity: 0; transform: translateY(20px); }
-  to { opacity: 1; transform: translateY(0); }
-}
+/* Let the common styles from energie_type_common.css handle most styling */

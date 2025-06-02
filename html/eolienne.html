@@ -5,10 +5,10 @@
   <title>Énergie Éolienne</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../css/styles.css">
+  <link rel="stylesheet" href="../css/energie_type_common.css">
   <link rel="stylesheet" href="../css/eolienne_style.css">
 </head>
 <body>
-
   <header>
     <div class="header-container">
       <img src="../img/Logo.png" alt="Logo site" class="logo">
@@ -23,74 +23,96 @@
   </header>
 
   <main>
-    <h2 style="text-align: center;">Cliquez sur le bouton pour faire tourner l'éolienne !</h2>
-
-    <div class="eolienne-zone">
-  <div class="eolienne-container">
-    <img src="../img/eolienne_sans_palme.png" class="eolienne-base" alt="Éolienne fixe">
-    <img src="../img/pales_éolienne.png" id="palmes" class="palmes" alt="Pales éolienne">
-  </div>
-</div>
-
-
-    <div class="btn-container">
-      <button onclick="demarrerEolienne()">Faire tourner</button>
+    <h2 class="page-title">Découvrez l'énergie éolienne</h2>
+    
+    <div class="interactive-container">
+      <p class="instructions">Cliquez sur l'icône de vent pour faire tourner l'éolienne !</p>
+      
+      <div class="eolienne-scene">
+        <div class="eolienne-container">
+          <img src="../img/eolienne_sans_palme.png" class="eolienne-base" alt="Éolienne fixe">
+          <img src="../img/pales_éolienne.png" id="palmes" class="palmes" alt="Pales éolienne">
+          <img src="../img/wind.png" class="wind-icon" alt="Icône de vent" onclick="demarrerEolienne()">
+        </div>
+      </div>
     </div>
 
-    <div id="content">
-      <h3>L’énergie éolienne – Informations clés</h3>
-      <table>
-        <thead>
-          <tr><th>Aspect</th><th>Description</th></tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Définition</td>
-            <td>Utilise la force du vent pour faire tourner des pales reliées à une génératrice, produisant ainsi de l’électricité.</td>
-          </tr>
-          <tr>
-            <td>Types</td>
-            <td>
-              <strong>Éoliennes terrestres</strong> : sur terre, souvent en campagne ou montagne.<br>
-              <strong>Éoliennes offshore</strong> : installées en mer, plus puissantes.
-            </td>
-          </tr>
-          <tr>
-            <td>Avantages</td>
-            <td>
-              - Renouvelable et propre<br>
-              - Faible coût de fonctionnement<br>
-              - Grande efficacité énergétique
-            </td>
-          </tr>
-          <tr>
-            <td>Inconvénients</td>
-            <td>
-              - Intermittence (dépend du vent)<br>
-              - Impact visuel<br>
-              - Bruit pour les riverains
-            </td>
-          </tr>
-          <tr>
-            <td>Utilisations</td>
-            <td>
-              - Production d’électricité locale ou réseau<br>
-              - Pompage d’eau (dans certaines régions rurales)
-            </td>
-          </tr>
-          <tr>
-            <td>Impact environnemental</td>
-            <td>
-              Faible émission, mais possible perturbation des oiseaux et des paysages. Recyclage des pales en développement.
-            </td>
-          </tr>
-        </tbody>
-      </table>
+    <div id="content" class="content-sections">
+      <section>
+        <h2>Qu'est-ce que l'énergie éolienne ?</h2>
+        <p>
+          L'énergie éolienne utilise la force du vent pour faire tourner des pales reliées à une génératrice, produisant ainsi de l'électricité.
+        </p>
+      </section>
+
+      <!-- Rest of the content remains unchanged -->
+      <section>
+        <h2>Types d'installations éoliennes</h2>
+        <ul>
+          <li><strong>Éoliennes terrestres</strong> : implantées sur terre, souvent en campagne ou montagne.</li>
+          <li><strong>Éoliennes offshore</strong> : installées en mer, plus puissantes et bénéficiant de vents plus forts et réguliers.</li>
+          <li><strong>Petites éoliennes</strong> : utilisées pour des applications locales ou domestiques.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Avantages de l'énergie éolienne</h2>
+        <ul>
+          <li>Renouvelable et propre</li>
+          <li>Faible coût de fonctionnement</li>
+          <li>Grande efficacité énergétique</li>
+          <li>Utilisation des terres compatible avec l'agriculture</li>
+          <li>Technologie mature et fiable</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Limites et défis</h2>
+        <ul>
+          <li>Intermittence (dépend du vent)</li>
+          <li>Impact visuel sur le paysage</li>
+          <li>Bruit potentiel pour les riverains</li>
+          <li>Possibles perturbations pour certaines espèces d'oiseaux</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Applications courantes</h2>
+        <ul>
+          <li>Production d'électricité à grande échelle pour le réseau</li>
+          <li>Production locale pour sites isolés</li>
+          <li>Pompage d'eau dans certaines régions rurales</li>
+          <li>Complément aux systèmes photovoltaïques dans les installations hybrides</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Impact environnemental</h2>
+        <p>
+          L'énergie éolienne présente une empreinte carbone très faible et n'émet pas de polluants durant son exploitation. Même si elle peut avoir un impact visuel et, dans certains cas, affecter la faune aviaire, ces inconvénients sont considérés comme mineurs par rapport aux bénéfices environnementaux. Le recyclage des pales en fin de vie est un défi qui fait l'objet de recherches actives.
+        </p>
+      </section>
+
+      <section>
+        <h2>Le saviez-vous ?</h2>
+        <p>
+          Une seule éolienne de taille moyenne peut produire assez d'électricité pour alimenter environ 1000 foyers. Le Danemark produit plus de 40% de son électricité grâce à l'énergie éolienne !
+        </p>
+      </section>
+
+      <section>
+        <h2>Activité interactive</h2>
+        <p>
+          Tu peux maintenant tester tes connaissances en lançant le <a href="quiz.html">quiz sur l'énergie éolienne</a>.
+        </p>
+      </section>
     </div>
   </main>
 
   <footer>
-    <nav><a href="apropos.html">À propos</a></nav>
+    <nav>
+      <a href="apropos.html">À propos</a>
+    </nav>
   </footer>
 
   <script src="../javascript/eolienne.js"></script>

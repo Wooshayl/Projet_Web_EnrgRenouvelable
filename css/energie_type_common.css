@@ -1,0 +1,169 @@
+/* === COMMON ENERGY PAGE STYLING === */
+/* Base layout */
+main {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Page title */
+.page-title {
+  color: #1a7431;
+  text-align: center;
+  margin: 1.5rem 0;
+  font-size: 1.8rem;
+}
+
+/* Interactive container */
+.interactive-container {
+  background-color: #f8f9fa;
+  border-radius: 12px;
+  padding: 2rem;
+  margin: 2rem auto;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+}
+
+/* Instructions text */
+.instructions {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  color: #1a7431;
+}
+
+/* Content section (revealed after interaction) */
+#content {
+  display: none;
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #f8f9fa;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 1s ease forwards;
+}
+
+#content h3 {
+  color: #1a7431;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+/* Info table */
+.info-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0 auto;
+}
+
+.info-table th,
+.info-table td {
+  padding: 12px 15px;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+
+.info-table th {
+  background-color: #1a7431;
+  color: white;
+  font-weight: 600;
+}
+
+.info-table tr:nth-child(even) {
+  background-color: rgba(0, 0, 0, 0.02);
+}
+
+.info-table tr:hover {
+  background-color: rgba(26, 116, 49, 0.05);
+}
+
+/* Button styles */
+.action-button {
+  padding: 10px 20px;
+  background-color: #f9c74f;
+  color: #333;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+  font-size: 1rem;
+}
+
+.action-button:hover {
+  background-color: #f3b711;
+  transform: translateY(-3px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .interactive-container {
+    padding: 1.5rem;
+  }
+  
+  #content {
+    padding: 1.5rem;
+  }
+  
+  .info-table th,
+  .info-table td {
+    padding: 8px;
+    font-size: 0.9rem;
+  }
+}
+
+/* Content sections styling (to match biomasse page) */
+.content-sections {
+  display: block; /* Override the display:none from #content */
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #f8f9fa;
+  border-left: 5px solid #1a7431;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 1s ease forwards;
+}
+
+.content-sections section {
+  margin-bottom: 25px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  padding-bottom: 20px;
+}
+
+.content-sections section:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.content-sections h2 {
+  color: #1a7431;
+  margin-bottom: 15px;
+  font-size: 1.5rem;
+}
+
+.content-sections ul {
+  list-style-type: disc;
+  margin: 10px 0 20px 40px;
+  text-align: left;
+}
+
+.content-sections li {
+  margin-bottom: 8px;
+  line-height: 1.5;
+}
+
+.content-sections p {
+  line-height: 1.6;
+  margin-bottom: 15px;
+  text-align: left;
+}

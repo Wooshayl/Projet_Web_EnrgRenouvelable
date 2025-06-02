@@ -6,16 +6,16 @@
   <title>Énergie Solaire</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../css/styles.css">
+  <link rel="stylesheet" href="../css/energie_type_common.css">
   <link rel="stylesheet" href="../css/solaire_style.css">
 </head>
 
 <body>
-
   <header>
     <div class="header-container">
       <img src="../img/Logo.png" alt="Logo site" class="logo">
-      <h1>Vers un Avenir Renouvelable</h1>
-      <img src="../img/ODD7.png" alt="Logo ODD 7" class="odd7" height="300px">
+      <h1>Énergie Solaire</h1>
+      <img src="../img/ODD7.png" alt="Logo ODD 7" class="odd7">
     </div>
     <nav>
       <a href="accueil.html">Accueil</a>
@@ -25,85 +25,98 @@
   </header>
 
   <main>
-    <h2 style="text-align: center;">Cliquez sur les nuages pour libérer le soleil !</h2>
+    <h2 class="page-title">Découvrez l'énergie solaire</h2>
 
-    <div class="scene">
-      <img src="../img/solar_horizontal.png" alt="Soleil" class="sun">
-      <img src="../img/nuage.png" class="cloud" style="top: 10px; left: 30px;" onclick="removeCloud(this)">
-      <img src="../img/nuage.png" class="cloud" style="top: 40px; left: 60px;" onclick="removeCloud(this)">
-      <img src="../img/nuage.png" class="cloud" style="top: 20px; left: 100px;" onclick="removeCloud(this)">
-      <img src="../img/nuage.png" class="cloud" style="top: 70px; left: 40px;" onclick="removeCloud(this)">
-      <img src="../img/nuage.png" class="cloud" style="top: 30px; left: 150px;" onclick="removeCloud(this)">
+    <div class="interactive-container">
+      <p class="instructions">Cliquez sur les nuages pour libérer le soleil !</p>
+
+      <div class="scene">
+        <img src="../img/solar_horizontal.png" alt="Soleil" class="sun">
+        <img src="../img/nuage.png" class="cloud" style="top: 10px; left: 30px;" onclick="removeCloud(this)">
+        <img src="../img/nuage.png" class="cloud" style="top: 40px; left: 60px;" onclick="removeCloud(this)">
+        <img src="../img/nuage.png" class="cloud" style="top: 20px; left: 100px;" onclick="removeCloud(this)">
+        <img src="../img/nuage.png" class="cloud" style="top: 70px; left: 40px;" onclick="removeCloud(this)">
+        <img src="../img/nuage.png" class="cloud" style="top: 30px; left: 150px;" onclick="removeCloud(this)">
+      </div>
     </div>
 
-    <div id="content">
-      <h3>L’énergie solaire – Informations clés</h3>
-      <table>
-        <thead>
-          <tr>
-            <th>Aspect</th>
-            <th>Description</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Définition</td>
-            <td>L’énergie solaire est une source d’énergie renouvelable provenant du rayonnement du soleil. Elle peut
-              être convertie en électricité ou en chaleur grâce à des technologies spécifiques telles que les panneaux
-              photovoltaïques et les capteurs thermiques.</td>
-          </tr>
-          <tr>
-            <td>Types</td>
-            <td>
-              <strong>Solaire photovoltaïque</strong> : transforme directement la lumière du soleil en électricité à
-              l’aide de cellules en silicium.<br>
-              <strong>Solaire thermique</strong> : capte la chaleur du soleil pour chauffer de l’eau ou des
-              bâtiments.<br>
-              <strong>Solaire thermodynamique</strong> : concentre les rayons solaires pour produire de la vapeur et
-              alimenter une turbine électrique.
-            </td>
-          </tr>
-          <tr>
-            <td>Avantages</td>
-            <td>
-              - Source d’énergie inépuisable à l’échelle humaine<br>
-              - Ne produit pas de pollution lors de son utilisation<br>
-              - Réduction des émissions de gaz à effet de serre<br>
-              - Faible coût de fonctionnement après installation<br>
-              - Installation possible sur les toits ou en zone rurale
-            </td>
-          </tr>
-          <tr>
-            <td>Inconvénients</td>
-            <td>
-              - Production intermittente (pas de soleil la nuit ou par temps couvert)<br>
-              - Rendement dépend de l’ensoleillement local<br>
-              - Nécessite des surfaces importantes pour les installations à grande échelle<br>
-              - Coût initial encore élevé, bien que de plus en plus abordable
-            </td>
-          </tr>
-          <tr>
-            <td>Utilisations</td>
-            <td>
-              - Production d’électricité pour les maisons et les entreprises<br>
-              - Chauffe-eau solaires<br>
-              - Agriculture (séchage de cultures, serres)<br>
-              - Éclairage public autonome<br>
-              - Systèmes de pompage d’eau en zones rurales isolées
-            </td>
-          </tr>
-          <tr>
-            <td>Impact environnemental</td>
-            <td>
-              L’énergie solaire a un impact environnemental très faible pendant son utilisation. La fabrication des
-              panneaux peut générer des émissions et des déchets, mais ces effets sont compensés par les années de
-              production d’énergie propre. De plus, les technologies évoluent vers plus de recyclabilité.
-            </td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
+    <div id="content" class="content-sections">
+      <section>
+        <h2>Qu'est-ce que l'énergie solaire ?</h2>
+        <p>
+          L'énergie solaire est une source d'énergie renouvelable provenant du rayonnement du soleil. Elle peut
+          être convertie en électricité ou en chaleur grâce à des technologies spécifiques telles que les panneaux
+          photovoltaïques et les capteurs thermiques.
+        </p>
+      </section>
 
+      <section>
+        <h2>Comment fonctionne l'énergie solaire ?</h2>
+        <ul>
+          <li><strong>Solaire photovoltaïque</strong> : transforme directement la lumière du soleil en électricité à
+            l'aide de cellules en silicium.</li>
+          <li><strong>Solaire thermique</strong> : capte la chaleur du soleil pour chauffer de l'eau ou des
+            bâtiments.</li>
+          <li><strong>Solaire thermodynamique</strong> : concentre les rayons solaires pour produire de la vapeur et
+            alimenter une turbine électrique.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Avantages de l'énergie solaire</h2>
+        <ul>
+          <li>Source d'énergie inépuisable à l'échelle humaine</li>
+          <li>Ne produit pas de pollution lors de son utilisation</li>
+          <li>Réduction des émissions de gaz à effet de serre</li>
+          <li>Faible coût de fonctionnement après installation</li>
+          <li>Installation possible sur les toits ou en zone rurale</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Limites et défis</h2>
+        <ul>
+          <li>Production intermittente (pas de soleil la nuit ou par temps couvert)</li>
+          <li>Rendement dépend de l'ensoleillement local</li>
+          <li>Nécessite des surfaces importantes pour les installations à grande échelle</li>
+          <li>Coût initial encore élevé, bien que de plus en plus abordable</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Applications courantes</h2>
+        <ul>
+          <li>Production d'électricité pour les maisons et les entreprises</li>
+          <li>Chauffe-eau solaires</li>
+          <li>Agriculture (séchage de cultures, serres)</li>
+          <li>Éclairage public autonome</li>
+          <li>Systèmes de pompage d'eau en zones rurales isolées</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Impact environnemental</h2>
+        <p>
+          L'énergie solaire a un impact environnemental très faible pendant son utilisation. La fabrication des
+          panneaux peut générer des émissions et des déchets, mais ces effets sont compensés par les années de
+          production d'énergie propre. De plus, les technologies évoluent vers plus de recyclabilité.
+        </p>
+      </section>
+
+      <section>
+        <h2>Le saviez-vous ?</h2>
+        <p>
+          En une heure, le soleil envoie sur Terre plus d'énergie que ce que l'humanité consomme en une année entière !
+        </p>
+      </section>
+
+      <section>
+        <h2>Activité interactive</h2>
+        <p>
+          Tu peux maintenant tester tes connaissances en lançant le <a href="quiz.html">quiz sur l'énergie solaire</a>.
+        </p>
+      </section>
+    </div>
   </main>
 
   <footer>
@@ -111,7 +124,6 @@
       <a href="apropos.html">À propos</a>
     </nav>
   </footer>
-
 
   <script src="../javascript/solaire.js"></script>
 </body>
