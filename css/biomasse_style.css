@@ -1,10 +1,13 @@
-/* Biomass page specific styles */
+/* === STYLES SPÉCIFIQUES À LA PAGE BIOMASSE === */
+
+/* Mise en page de la scène contenant la vache et l'élément animé */
 #scene {
   position: relative;
   display: inline-block;
   margin: 20px auto;
 }
 
+/* Affichage de l'image de la vache avec effet interactif au survol */
 #vache {
   width: 300px;
   cursor: pointer;
@@ -16,6 +19,7 @@
   transform: scale(1.05);
 }
 
+/* Apparition d’un élément animé sous la vache (ex. : "caca") */
 #caca {
   position: absolute;
   bottom: -20px;
@@ -26,13 +30,9 @@
   z-index: 0;
 }
 
-.hidden {
+/* Masque un élément par défaut (à afficher avec JavaScript) */
+.hidden,
+#secretMessage {
   display: none;
 }
 
-/* Override the specific styling from biomasse to match other pages */
-#secretMessage {
-  display: none; /* This will be shown by JavaScript */
-}
-
-/* Let the common styles from energie_type_common.css handle most styling */

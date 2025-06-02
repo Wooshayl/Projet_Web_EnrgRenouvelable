@@ -1,12 +1,15 @@
-/* Solar page specific styles */
+/* === STYLES SPÉCIFIQUES À LA PAGE SOLAIRE === */
+
+/* Scène principale contenant le soleil et les nuages animés */
 .scene {
   position: relative;
   width: 100%;
   max-width: 500px;
   margin: 0 auto;
-  overflow: hidden; /* Prevent clouds from going outside container */
+  overflow: hidden; /* Empêche les nuages de déborder hors de la scène */
 }
 
+/* Image fixe représentant le soleil */
 .sun {
   width: 100%;
   max-width: 500px;
@@ -14,9 +17,11 @@
   display: block;
 }
 
+/* === NUAGES INTERACTIFS === */
+/* Nuages positionnés en absolu avec effet au survol */
 .cloud {
   position: absolute;
-  width: 40%; /* Percentage-based width for responsiveness */
+  width: 40%; /* Taille adaptable pour les petits écrans */
   max-width: 200px;
   cursor: pointer;
   transition: opacity 0.5s, transform 0.5s;
@@ -27,7 +32,8 @@
   transform: scale(1.1);
 }
 
-/* Responsive adjustments */
+/* === ADAPTATION RESPONSIVE === */
+/* Ajustement progressif de la taille de la scène pour les mobiles */
 @media (max-width: 768px) {
   .scene {
     max-width: 400px;

@@ -6,8 +6,8 @@ body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-/*=== HEADER FIXE EN HAUT DE PAGE === */
-/* Barre supérieure avec logo, titre et effet sticky */ 
+/* === HEADER FIXE EN HAUT DE PAGE === */
+/* Bandeau supérieur avec logo, titre central et icône ODD */
 header {
   background-color: #1a7431;
   padding: 0;
@@ -16,7 +16,7 @@ header {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
 }
 
-/* Conteneur du header : aligne le logo, le titre et l’icône ODD */
+/* Conteneur du header : disposition en ligne, centrée */
 .header-container {
   display: flex;
   justify-content: space-between;
@@ -26,7 +26,7 @@ header {
   margin: 0 auto;
 }
 
-/* Logos (gauche et droite) avec petit effet au survol */
+/* Logos gauche et droite avec léger zoom au survol */
 .logo, .odd7 {
   width: 60px;
   height: auto;
@@ -37,7 +37,7 @@ header {
   transform: scale(1.05);
 }
 
-/* Titre centré en blanc, avec effet d’ombre */
+/* Titre principal au centre, en blanc avec ombre */
 .header-container h1 {
   flex: 1;
   text-align: center;
@@ -48,7 +48,7 @@ header {
 }
 
 /* === BARRE DE NAVIGATION === */
-/* Menu horizontal avec arrière-plan vert et séparation visuelle */
+/* Menu horizontal vert avec effet de survol fluide */
 nav {
   background-color: #1a7431;
   padding: 0;
@@ -58,7 +58,7 @@ nav {
   position: relative;
 }
 
-/* Nav links container, centered and width-limited */
+/* Conteneur des liens de navigation centré */
 .nav-container {
   display: flex;
   justify-content: center;
@@ -66,7 +66,7 @@ nav {
   max-width: 1000px;
 }
 
-/* General style for navigation links */
+/* Liens de navigation stylisés (espacement, animation, lisibilité) */
 nav a {
   text-decoration: none;
   color: white;
@@ -78,10 +78,10 @@ nav a {
   transition: all 0.3s ease;
   font-weight: 500;
   letter-spacing: 0.5px;
-  white-space: nowrap; /* Prevent text wrapping inside links */
+  white-space: nowrap;
 }
 
-/* Animated white line under link on hover */
+/* Ligne animée sous les liens au survol */
 nav a::after {
   content: '';
   position: absolute;
@@ -102,7 +102,7 @@ nav a:hover::after {
   width: 70%;
 }
 
-/* Highlight active link */
+/* Mise en évidence du lien actif */
 nav a.active {
   background-color: rgba(255, 255, 255, 0.15);
 }
@@ -111,15 +111,15 @@ nav a.active::after {
   width: 70%;
 }
 
-/* Specific background colors by link (hover) */
+/* Variantes de couleur au survol selon la position du lien */
 nav a:first-child:hover,
 nav a:nth-child(2):hover,
 nav a:nth-child(3):hover {
   background-color: rgba(26, 188, 156, 0.3);
 }
 
-/* === BOUTON MENU (POUR VERSION MOBILE) === */
-/* Bouton hamburger affiché seulement en version mobile */
+/* === BOUTON MENU (VERSION MOBILE) === */
+/* Bouton hamburger caché par défaut, visible sur petits écrans */
 menu-toggle {
   display: none;
   background: none;
@@ -138,7 +138,6 @@ menu-toggle {
   outline: none;
 }
 
-/* Hamburger icon */
 .menu-toggle span {
   display: block;
   width: 25px;
@@ -149,12 +148,14 @@ menu-toggle {
 }
 
 /* === LIENS DANS LE CORPS DE PAGE === */
+/* Style pour les liens dans les sections (ex: bouton ou citation) */
 section a {
   color: #27AE60;
   font-style: italic;
 }
 
 /* === FOOTER SIMPLE === */
+/* Pied de page centré, même couleur que le header/nav */
 footer {
   background-color: #1a7431;
   padding: 20px;

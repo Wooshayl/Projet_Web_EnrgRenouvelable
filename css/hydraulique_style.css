@@ -1,4 +1,6 @@
-/* Hydraulic page specific styles */
+/* === STYLES SPÉCIFIQUES À LA PAGE HYDRAULIQUE === */
+
+/* Conteneur principal du barrage avec image et animation d'eau */
 .barrage-container {
   position: relative;
   width: 100%;
@@ -7,6 +9,7 @@
   overflow: hidden;
 }
 
+/* Image du barrage en fond */
 .barrage-img {
   width: 100%;
   max-width: 500px;
@@ -16,6 +19,7 @@
   position: relative;
 }
 
+/* Masque transparent pour limiter la zone d'animation des colonnes d'eau */
 .mask {
   position: absolute;
   top: 45%;
@@ -26,6 +30,7 @@
   pointer-events: none;
 }
 
+/* Colonnes d'eau animées simulant l'écoulement */
 .eau-colonne {
   position: absolute;
   bottom: 0;
@@ -36,6 +41,7 @@
   border-radius: 2px;
 }
 
+/* Positionnement et déformation des colonnes pour un effet réaliste */
 .colonne1 {
   left: 33.6%;
   width: 8.3%;
@@ -54,12 +60,13 @@
   transform: skewX(3deg);
 }
 
-/* Updated pump styling - positioned directly on the dam image */
+/* === BOUTON POMPE INTERACTIF === */
+/* Image cliquable positionnée sur le barrage */
 .pompe {
   position: absolute;
   top: 10%;
   right: 14%;
-  width: 15%; /* Percentage-based width */
+  width: 15%;
   max-width: 60px;
   cursor: pointer;
   transition: transform 0.3s ease;
@@ -75,12 +82,13 @@
   transform: scale(0.95) rotate(-10deg);
 }
 
-/* Responsive adjustments */
+/* === ADAPTATION RESPONSIVE === */
+/* Redimensionne les éléments pour s’adapter aux petits écrans */
 @media (max-width: 768px) {
   .barrage-container {
     max-width: 400px;
   }
-  
+
   .barrage-img {
     max-width: 400px;
   }
@@ -90,7 +98,7 @@
   .barrage-container {
     max-width: 300px;
   }
-  
+
   .barrage-img {
     max-width: 300px;
   }

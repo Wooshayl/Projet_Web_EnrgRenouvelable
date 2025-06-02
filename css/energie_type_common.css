@@ -1,12 +1,13 @@
-/* === COMMON ENERGY PAGE STYLING === */
-/* Base layout */
+/* === PAGE ENERGIE TYPE COMMON STYLE === */
+
+/* Structure de base de la page principale (centrage + marges) */
 main {
   max-width: 1000px;
   margin: 0 auto;
   padding: 20px;
 }
 
-/* Page title */
+/* Titre principal de la page */
 .page-title {
   color: #1a7431;
   text-align: center;
@@ -14,7 +15,8 @@ main {
   font-size: 1.8rem;
 }
 
-/* Interactive container */
+/* === BLOC INTERACTIF INITIALEMENT MASQUÉ === */
+/* Conteneur avec instructions et bouton déclencheur */
 .interactive-container {
   background-color: #f8f9fa;
   border-radius: 12px;
@@ -25,14 +27,14 @@ main {
   max-width: 800px;
 }
 
-/* Instructions text */
+/* Texte d’instruction affiché avant interaction */
 .instructions {
   font-size: 1.2rem;
   margin-bottom: 2rem;
   color: #1a7431;
 }
 
-/* Content section (revealed after interaction) */
+/* Contenu révélé après interaction (initialement masqué) */
 #content {
   display: none;
   max-width: 800px;
@@ -50,7 +52,8 @@ main {
   text-align: center;
 }
 
-/* Info table */
+/* === TABLEAU INFORMATIF === */
+/* Tableau de présentation des données avec alternance visuelle */
 .info-table {
   width: 100%;
   border-collapse: collapse;
@@ -78,7 +81,8 @@ main {
   background-color: rgba(26, 116, 49, 0.05);
 }
 
-/* Button styles */
+/* === BOUTON D'ACTION PRINCIPAL === */
+/* Bouton stylisé utilisé pour déclencher l'affichage du contenu */
 .action-button {
   padding: 10px 20px;
   background-color: #f9c74f;
@@ -97,22 +101,22 @@ main {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Animation */
+/* === ANIMATION D'APPARITION EN DOUCEUR === */
 @keyframes fadeIn {
   from { opacity: 0; transform: translateY(20px); }
   to { opacity: 1; transform: translateY(0); }
 }
 
-/* Responsive adjustments */
+/* === RESPONSIVE DESIGN POUR PETITS ÉCRANS === */
 @media (max-width: 768px) {
   .interactive-container {
     padding: 1.5rem;
   }
-  
+
   #content {
     padding: 1.5rem;
   }
-  
+
   .info-table th,
   .info-table td {
     padding: 8px;
@@ -120,9 +124,10 @@ main {
   }
 }
 
-/* Content sections styling (to match biomasse page) */
+/* === SECTION DE CONTENU DÉTAILLÉ === */
+/* Présentation structurée de plusieurs paragraphes ou listes après interaction */
 .content-sections {
-  display: block; /* Override the display:none from #content */
+  display: block;
   max-width: 800px;
   margin: 2rem auto;
   padding: 2rem;
