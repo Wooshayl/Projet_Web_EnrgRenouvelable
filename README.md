@@ -31,7 +31,7 @@ Ce site web a été développé dans le cadre d’un projet universitaire. Il vi
 
 ## 📁 Arborescence simplifiée
 
-
+![Aperçu de l'arborescence du site](./img/arborescence.png)
 ---
 
 ## 👨‍🎓 Auteurs
