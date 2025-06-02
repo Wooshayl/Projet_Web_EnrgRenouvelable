@@ -1,10 +1,12 @@
+/* Mise en forme globale du conteneur principal */
 main {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 1rem;
 }
 
-/* Hero section */
+/* === SECTION HERO DE LA PAGE À PROPOS === */
+/* Bandeau en haut de page avec fond vert, titre et description */
 .apropos-hero {
   background-color: #1a7431;
   color: white;
@@ -25,7 +27,8 @@ main {
   margin: 0 auto;
 }
 
-/* Team section */
+/* === SECTION ÉQUIPE === */
+/* Affiche les cartes de présentation de chaque membre de l'équipe */
 .team-container {
   text-align: center;
   padding: 2rem 0;
@@ -52,6 +55,7 @@ main {
   transform: translateY(-10px);
 }
 
+/* Affichage circulaire de l'image ou des initiales du membre */
 .profile-image {
   width: 120px;
   height: 120px;
@@ -91,7 +95,8 @@ main {
   margin-top: 1rem;
 }
 
-/* Project info section */
+/* === SECTION INFOS SUR LE PROJET === */
+/* Présente les infos générales dans des blocs alignés */
 .about-project {
   padding: 2rem 0;
   text-align: center;
@@ -121,7 +126,8 @@ main {
   font-size: 1.3rem;
 }
 
-/* Contact section */
+/* === SECTION CONTACT === */
+/* Bloc contact avec bouton cliquable */
 .contact-section {
   background-color: #f8f9fa;
   border-radius: 8px;
@@ -146,17 +152,18 @@ main {
   background-color: #f3b711;
 }
 
-/* Responsive adjustments */
+/* === RESPONSIVE === */
+/* Adaptations mobiles pour les titres et cartes */
 @media (max-width: 768px) {
   .apropos-hero h2 {
     font-size: 2rem;
   }
-  
+
   .team-card {
     width: 100%;
     max-width: 300px;
   }
-  
+
   .info-card {
     width: 100%;
   }

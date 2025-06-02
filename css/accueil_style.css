@@ -1,11 +1,11 @@
+/* Style global du corps de page */
 body {
   margin: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-/* Add these styles to your existing CSS */
-
-/* Hero section */
+/* === SECTION HERO === */
+/* Mise en page du bandeau principal d'introduction avec un message d'accroche et un bouton */
 .hero {
   padding: 3rem 1rem;
   text-align: center;
@@ -38,7 +38,8 @@ body {
   background-color: #f3b711;
 }
 
-/* Stats section */
+/* === SECTION STATS === */
+/* Affiche des statistiques clés sous forme de cartes centrées */
 .stats-section {
   text-align: center;
   padding: 2rem 1rem;
@@ -68,7 +69,8 @@ body {
   margin-bottom: 0.5rem;
 }
 
-/* Info section */
+/* === SECTION INFORMATIVE === */
+/* Présente des paragraphes d'information accompagnés d'une image */
 .info-section {
   padding: 2rem 1rem;
   margin-bottom: 2rem;
@@ -78,6 +80,7 @@ body {
   text-align: center;
   margin-bottom: 1.5rem;
 }
+
 .info-container {
   display: flex;
   flex-wrap: wrap;
@@ -96,7 +99,7 @@ body {
 
 .info-image {
   display: flex;
-  justify-content: center; /* Center the image in its container */
+  justify-content: center;
   flex: 1;
   min-width: 200px;
   max-width: 300px;
@@ -108,7 +111,8 @@ body {
   border-radius: 8px;
 }
 
-/* Energy preview section */
+/* === SECTION AVANTAGES DES ÉNERGIES === */
+/* 3 cartes avec image, texte et lien expliquant les bénéfices des énergies renouvelables */
 .energy-preview {
   padding: 2rem 1rem;
   text-align: center;
@@ -163,7 +167,8 @@ body {
   text-decoration: underline;
 }
 
-/* Action section */
+/* === SECTION D'APPEL À L'ACTION === */
+/* Encourage l'utilisateur à participer avec 2 boutons (quiz, mission) */
 .action-section {
   padding: 3rem 1rem;
   text-align: center;
@@ -198,21 +203,22 @@ body {
   background-color: #f3b711;
 }
 
-/* Responsive adjustments */
+/* === RESPONSIVE === */
+/* Adaptation mobile : réductions de taille et mise en colonne */
 @media (max-width: 768px) {
   .hero h2 {
     font-size: 2rem;
   }
-  
+
   .stat-card {
     width: 100%;
     max-width: 300px;
   }
-  
+
   .info-container {
     flex-direction: column;
   }
-  
+
   .energy-card {
     width: 100%;
     max-width: 350px;
